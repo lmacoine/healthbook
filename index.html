@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mon Carnet de Santé</title>
+<link href="styles.css" rel="stylesheet"></head>
+<body class="theme-1" ng-app="myHealthBookApp">
+	<div class="layout-container">
+		<header class="header-container">
+			<nav>
+			</nav>
+		</header>
+		<aside class="sidebar-container">
+			<div class="sidebar-header">
+				<div class="sidebar-header-logo">
+					<span class="sidebar-header-logo-text">Mon Carnet</span>
+				</div>
+			</div>
+			<div class="sidebar-content">
+				<nav class="sidebar-nav">
+					<ul>
+						<li><a ui-sref="home" ui-sref-active="active">Accueil</a></li>
+						<li><a ui-sref="allerg" ui-sref-active="active">Allergies</a></li>
+						<li><a ui-sref="atcd" ui-sref-active="active">Antécédents</a></li>
+						<li><a ui-sref="surv" ui-sref-active="active">Surveillance</a></li>
+						<li><a ui-sref="vacc" ui-sref-active="active">Vaccinations</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<main class="main-container">
+			<section>
+				<div>
+					<div ui-view></div>
+				</div>
+			</section>
+		</main>
+	</div>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
